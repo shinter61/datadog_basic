@@ -7,6 +7,9 @@ datadog:
     portEnabled: true
   kubelet:
     tlsVerify: false
+  logs:
+    enabled: true
+    containerCollectAll: true
 # agents:
   # image:
   #   tag: 7.41.1

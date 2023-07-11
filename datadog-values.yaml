@@ -1,0 +1,19 @@
+targetSystem: "linux"
+datadog:
+  apiKeyExistingSecret: datadog-secret
+  appKeyExistingSecret: datadog-secret
+  site: datadoghq.com
+  apm:
+    portEnabled: true
+  kubelet:
+    tlsVerify: false
+agents:
+  image:
+    tag: 7.41.1
+    # enabled: true
+  # apm_config:
+  #   enabled: true
+  # datadog:
+  #   apmEnabled: true 
+
+

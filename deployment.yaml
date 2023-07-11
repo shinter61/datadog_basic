@@ -10,11 +10,10 @@ spec:
     metadata:
       labels:
         app: docker-sample-app
-      annotations:
-        admission.datadoghq.com/js-lib.version: v3.6.0
     spec:
       imagePullSecrets:
         - name: ecr-secret
+      hostNetwork: true
       containers:
         - name: docker-sample-app
           image: 167855287371.dkr.ecr.ap-northeast-1.amazonaws.com/sre-onboarding-shinta-datadog:latest
